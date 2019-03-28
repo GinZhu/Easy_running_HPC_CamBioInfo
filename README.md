@@ -43,11 +43,11 @@ The file system is very similar as kiiara/crunchy/cozy, you will have your home 
 > scp user_name&#64;login-gpu.hpc.cam.ac.uk:PATH/slurm* WHERE_TO_SAVE
 
 # Using PyTorch:
-1. Using PyTroch: https://docs.hpc.cam.ac.uk/hpc/software-packages/pytorch.html?highlight=pytorch
+1.  Using PyTroch: https://docs.hpc.cam.ac.uk/hpc/software-packages/pytorch.html?highlight=pytorch
 2. In the above tutorial, [modules](https://docs.hpc.cam.ac.uk/hpc/user-guide/development.html?highlight=module "modules") are mentioned. I suggest to copy the following into ~/.bashrc:
 > $ module load cuda/9.0 intel/mkl/2017.4
-> $ module load python-3.6.1-gcc-5.4.0-64u3a4w py-numpy-1.12.1-gcc-5.4.0-cjrgw2k py-matplotlib-2.2.2-gcc-5.4.0-6oe6fph
-> $ module load py-virtualenv-15.1.0-gcc-5.4.0-gu4wi6c
+$ module load python-3.6.1-gcc-5.4.0-64u3a4w py-numpy-1.12.1-gcc-5.4.0-cjrgw2k py-matplotlib-2.2.2-gcc-5.4.0-6oe6fph
+$ module load py-virtualenv-15.1.0-gcc-5.4.0-gu4wi6c
 
 3. Please use Python 3 if you want to use TensorFlow on HPC, here is the [tutorial](https://docs.hpc.cam.ac.uk/hpc/software-packages/tensorflow.html "tutorial").
 
@@ -55,7 +55,7 @@ The file system is very similar as kiiara/crunchy/cozy, you will have your home 
 You need to use slurm system to submit your job(s) to the queue.
 1. First, modify the [example script](https://github.com/GinZhu/Easy_running_HPC_CamBioInfo/blob/master/hpc_start.script "example script") for your job. You may also use the offical [example](https://docs.hpc.cam.ac.uk/hpc/user-guide/batch.html "example")
 2. submit the job by:
-  > sbatch your_script
+> sbatch your_script
 
 3. In the script, you can set num of nodes, gpus, max running time, and so on. You can require at most 36 hours. You will also decide receive what emails. For detials, see [sbatch]( https://slurm.schedmd.com/sbatch.html "sbatch").
 4. Remeber using the right Python interpreter in your script: https://github.com/GinZhu/Easy_running_HPC_CamBioInfo/blob/master/hpc_run_parallelizing.py
@@ -68,8 +68,3 @@ Finally there is the chance to use multi-gpus with HPC.
 
 # Official documents:
 1. Using HPC: https://docs.hpc.cam.ac.uk/hpc/user-guide/batch.html
-
-
-
-
-
