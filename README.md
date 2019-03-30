@@ -69,6 +69,8 @@ You need to use slurm system to submit your job(s) to the queue.
 3. In the script, you can set num of nodes, gpus, max running time, and so on. You can require at most 36 hours. You will also decide receive what emails. For detials, see [sbatch]( https://slurm.schedmd.com/sbatch.html "sbatch").
 4. Remeber using the right Python interpreter in your script: https://github.com/GinZhu/Easy_running_HPC_CamBioInfo/blob/master/hpc_run_parallelizing.py
 
+Tips: it is suggested to test and debug your code on kiiara/crunchy/cozy before submitting the job, because the average queue time is around 2-3 hours on HPC. Based on my experience, if your code works on kiiara/crunchy/cozy, it will work well with HPC.
+
 # Using Multi-GPUs
 Finally there is the chance to use multi-gpus with HPC.
 1. Here is an [example](https://github.com/GinZhu/Easy_running_HPC_CamBioInfo/blob/master/hpc_run_parallelizing.py "example") to running multi training processing on multi GPUs.
