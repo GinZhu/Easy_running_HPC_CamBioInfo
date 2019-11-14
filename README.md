@@ -49,6 +49,9 @@ The file system is very similar as kiiara/crunchy/cozy, you will have your home 
 4. Using &#42; can copy all files with certain conditon:
 > scp user_name&#64;login-gpu.hpc.cam.ac.uk:PATH/slurm* WHERE_TO_SAVE
 
+5. rsync is better, to use:
+> rsync -avzh user_name&#64;login-gpu.hpc.cam.ac.uk:PATH_OF_DIR WHERE_TO_SAVE
+
 # Using PyTorch:
 1.  Using PyTroch: https://docs.hpc.cam.ac.uk/hpc/software-packages/pytorch.html?highlight=pytorch
 2. In the above tutorial, [modules](https://docs.hpc.cam.ac.uk/hpc/user-guide/development.html?highlight=module "modules") are mentioned. I suggest to copy the following into ~/.bashrc:
